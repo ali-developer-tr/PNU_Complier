@@ -37,7 +37,7 @@ require "connect.php";
     <div class="myForm mt-5">
         <form class="form-group" action="" method="post">
             <label class="form-check-label mb-3" for="myCode">Code: </label>
-            <textarea class="form-control shadow-sm" name="code" id="myCode" cols="30" rows="10">
+            <textarea class="codeArea form-control shadow-sm" name="code" id="myCode" cols="30" rows="10">
 <!--ali-->
             </textarea>
             <button type="submit" class="mt-4 btn btn-primary float-right">Submit Code</button>
@@ -88,6 +88,10 @@ require "connect.php";
             <div class="modal-body">
                 <script type="text/javascript">
 
+                    /**
+                     * @return {boolean}
+                     */
+
                     function RegValidateForm() {
                         var pass = document.getElementById('RegPass').value;
                         var passConf = document.getElementById("RegPassConf").value;
@@ -97,7 +101,7 @@ require "connect.php";
                             $(".passText").text("Password don't match with PasswordConfirm");
                             return false;
 
-                        } else if () {
+                        } else {
                             return true;
                         }
                     }
