@@ -58,12 +58,12 @@ require "connect.php";
                 </button>
             </div>
             <div class="modal-body">
-                <form action="login.php" method="post" class="form-group">
+                <form onsubmit="return LoginValidateForm()" action="login.php" method="post" class="form-group">
                     <label for="name" class="form-check-label">Username: </label>
-                    <input name="LoginUsername" id="name" type="text" class="name form-control">
+                    <input required minlength="4" name="LoginUsername" id="name" type="text" class="name form-control">
 
                     <label for="name" class="form-check-label mt-2">Password: </label>
-                    <input name="LoginPass" id="name" type="password" class="name form-control">
+                    <input required minlength="8" name="LoginPass" id="name" type="password" class="name form-control">
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-primary" type="submit">Login</button>
@@ -86,21 +86,44 @@ require "connect.php";
                 </button>
             </div>
             <div class="modal-body">
-                <form action="register.php" method="post" class="form-group">
-                    <label for="name" class="form-check-label">Name: </label>
-                    <input name="RegisterName" id="name" type="text" class="name form-control">
+                <script type="text/javascript">
 
-                    <label for="name" class="form-check-label mt-2">Username: </label>
-                    <input name="RegisterUsername" id="name" type="text" class="name form-control">
+                    function RegValidateForm() {
+                        var pass = document.getElementById('RegPass').value;
+                        var passConf = document.getElementById("RegPassConf").value;
 
-                    <label for="name" class="form-check-label mt-2">Email Address: </label>
-                    <input name="RegisterEmail" id="name" type="email" class="name form-control">
 
-                    <label for="name" class="form-check-label mt-2">Password: </label>
-                    <input name="RegisterPass" id="name" type="password" class="name form-control">
+                        if (pass !== passConf) {
+                            $(".passText").text("Password don't match with PasswordConfirm");
+                            return false;
 
-                    <!--  <label for="name" class="form-check-label mt-2">Password confirm: </label>
-                      <input name="RegisterUsername" id="name" type="password" class="name form-control">-->
+                        } else if () {
+                            return true;
+                        }
+                    }
+
+                </script>
+                <form onsubmit="return RegValidateForm()" action="index.php" method="post" class="form-group RegForm">
+                    <label for="RegName" class="form-check-label">FullName: </label>
+                    <input minlength="3" required name="RegisterName" id="RegName" type="text"
+                           class="RegName form-control">
+
+                    <label for="RegUsername" class="form-check-label mt-2">Username: </label>
+                    <input minlength="4" required name="RegisterUsername" id="RegUsername" type="text"
+                           class="RegUsername form-control">
+
+                    <label for="RegEmail" class="form-check-label mt-2">Email Address: </label>
+                    <input required name="RegisterEmail" id="RegEmail" type="email" class="RegEmail form-control">
+
+                    <label for="RegPass" class="form-check-label mt-2">Password: </label>
+                    <input minlength="8" required name="RegisterPass" id="RegPass" type="password"
+                           class="RegPass form-control">
+
+                    <label for="RegPassConf" class="form-check-label mt-2">Password confirm: </label>
+                    <input minlength="8" required name="RegisterPassConf" id="RegPassConf" type="password"
+                           class="RegPassConf form-control">
+                    <span class="passText"></span>
+
             </div>
             <div class="modal-footer">
                 <button name="registerButton" class="btn btn-outline-primary" type="submit">Register</button>

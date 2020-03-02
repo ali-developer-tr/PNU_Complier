@@ -47,10 +47,6 @@ button:focus, input:focus, a:focus {
     outline: none;
 }
 
-.header-list li {
-    display: inline-block;
-}
-
-.navDiv {
-    background-color: #1d2124;
+.passText{
+    color: red;
 }
