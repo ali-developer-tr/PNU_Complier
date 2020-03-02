@@ -1,2 +1,2 @@
-This is an attemp for creating PNU programming contest website using PHP.....
-This comment added after push invite
+salam mamad
+salam ali
