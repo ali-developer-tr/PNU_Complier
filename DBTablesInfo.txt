@@ -62,7 +62,7 @@ UserId
 ProblemId
 SrcCode (pointer to path)
 Result
-SubmisionTime
+SubmissionTime
 ExecutionTime
 MemoryUsage
 ProgrammingLanguage
