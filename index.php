@@ -58,7 +58,7 @@ require "connect.php";
                 </button>
             </div>
             <div class="modal-body">
-                <form onsubmit="return LoginValidateForm()" action="login.php" method="post" class="form-group">
+                <form action="login.php" method="post" class="form-group">
                     <label for="name" class="form-check-label">Username: </label>
                     <input required minlength="4" name="LoginUsername" id="name" type="text" class="name form-control">
 
@@ -95,7 +95,6 @@ require "connect.php";
                     function RegValidateForm() {
                         var pass = document.getElementById('RegPass').value;
                         var passConf = document.getElementById("RegPassConf").value;
-
 
                         if (pass !== passConf) {
                             $(".passText").text("Password don't match with PasswordConfirm");
