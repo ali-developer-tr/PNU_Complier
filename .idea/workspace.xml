@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b31fd5fd-057d-4f85-8fcb-a4ec5f54241e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b31fd5fd-057d-4f85-8fcb-a4ec5f54241e" name="Default Changelist" comment="Test&#10;bodisssssss" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +78,7 @@
       <updated>1583096366450</updated>
       <workItem from="1583096368067" duration="8592000" />
       <workItem from="1583139513075" duration="2252000" />
+      <workItem from="1583144811017" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1583139572933</created>
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583140734872</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test&#10;bodisssssss">
+      <created>1583144891402</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583144891402</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +118,8 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Test&#10;ali salam" />
     <MESSAGE value="Test&#10;bodi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test&#10;bodi" />
+    <MESSAGE value="Test&#10;bodisssssss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test&#10;bodisssssss" />
   </component>
   <component name="WindowStateProjectService">
     <state x="402" y="0" key="#PHP" timestamp="1583140914970">
@@ -128,10 +135,10 @@
     </state>
     <state x="321" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583140445596" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583103310611" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583144890365">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583144980998">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583144890365" />
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583144980998" />
     <state x="604" y="331" key="NewPhpFileDialog" timestamp="1583098506591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
