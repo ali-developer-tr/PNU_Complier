@@ -18,6 +18,10 @@ url('../fonts/IRANSansWeb(FaNum).woff2') format('woff2');
 url('../fonts/IRANSansWeb(FaNum)_Black.woff2') format('woff2');
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'IRANSans_Black', serif;
 }
@@ -47,6 +51,41 @@ button:focus, input:focus, a:focus {
     outline: none;
 }
 
-.passText{
+.passText {
     color: red;
 }
+
+.first-slide {
+    height: 500px;
+}
+
+.first-slide img {
+    height: 100%;
+}
+
+img {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+svg {
+    color: gray;
+}
+
+.nav li a {
+    color: black;
+}
+
+.nav li a:hover {
+    color: #c8ccc5;
+}
+
+.navbar-brand img {
+    width: 45px;
+    height: 45px;
+}
+.carousel {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
