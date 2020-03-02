@@ -6,9 +6,9 @@ require "connect.php";
 <html lang="fa-IR">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Ali Emami and mohammad samadpour and alireza karimian">
+    <meta name="description" content="Programming">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,python,java,c++,c,c#">
+    <meta name="author" content="Ali Emami and Mohammad Samadpour and Alireza Karimian">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -105,7 +105,7 @@ require "connect.php";
                     }
 
                 </script>
-                <form onsubmit="return RegValidateForm()" action="index.php" method="post" class="form-group RegForm">
+                <form onsubmit="return RegValidateForm()" action="register.php" method="post" class="form-group RegForm">
                     <label for="RegName" class="form-check-label">FullName: </label>
                     <input minlength="3" required name="RegisterName" id="RegName" type="text"
                            class="RegName form-control">
