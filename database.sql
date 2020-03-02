@@ -4,7 +4,7 @@ CREATE TABLE `pnu_contest`.`tblusers` (
   `username` VARCHAR(32) NOT NULL,
   `password` VARCHAR(33) NOT NULL,
   `email` VARCHAR(255) NOT NULL,
-  `verified` BLOB NULL DEFAULT false,
+  `verified` BLOB NULL,
   `verificationcode` INT NOT NULL,
   `photo` TEXT NULL,
   `birthday` DATE NULL,
