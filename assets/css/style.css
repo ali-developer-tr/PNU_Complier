@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'IRANSans';
+    font-weight: normal;
+    src: url('../fonts/IRANSansWeb(FaNum).eot?#') format('eot'),
+    url('../fonts/IRANSansWeb(FaNum).ttf') format('truetype'),
+    url('../fonts/IRANSansWeb(FaNum).woff') format('woff');
+url('../fonts/IRANSansWeb(FaNum).woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'IRANSans_Black';
+    font-weight: bold;
+    src: url('../fonts/IRANSansWeb(FaNum)_Black.eot?#') format('eot'),
+    url('../fonts/IRANSansWeb(FaNum)_Black.ttf') format('truetype'),
+    url('../fonts/IRANSansWeb(FaNum)_Black.woff') format('woff');
+url('../fonts/IRANSansWeb(FaNum)_Black.woff2') format('woff2');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IRANSans_Black', serif;
+}
+
+html, body, div, span, button, a, small, select, option, optgroup, ul, li, img, tr, table, tbody, td {
+    font-family: 'IRANSans', sans-serif;
+}
+
+textarea {
+    font-family: sans-serif !important;
+}
+
+ul {
+    padding-right: 0;
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+button:focus, input:focus, a:focus {
+    outline: none;
+}
+
+.header-list li {
+    display: inline-block;
+}
+
+.navDiv {
+    background-color: #1d2124;
+}
