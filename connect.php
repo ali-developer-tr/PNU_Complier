@@ -1,7 +1,11 @@
 <?php
-$servername = "localhost";
+
+include "";
+
+
+/*$servername = "localhost";
 $username = "root";
-$password = "";
+$password = "";*/
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=pnu_db", $username, $password);
@@ -9,5 +13,3 @@ try {
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-
-// Test
