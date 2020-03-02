@@ -1,1 +1,1 @@
-This is an attemp for creating PNU programming contest website using PHP
+This is an attemp for creating PNU programming contest website using PHP.
