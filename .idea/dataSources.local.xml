@@ -15,5 +15,11 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="MySQL - emamiali_pnu@88.99.106.154" uuid="af78069b-ca3c-487c-9eab-acbd9454372b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>emamiali_compiler</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

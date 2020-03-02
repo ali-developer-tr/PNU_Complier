@@ -8,7 +8,7 @@ $username = $_POST['LoginUsername'];
 $pass = $_POST['LoginPass'];
 
 $status = "";
-
+// Ali EMami Commit
 
 try {
     $query = "SELECT username, password FROM users WHERE username='" . $username . "' AND password='" . $pass . "'";
