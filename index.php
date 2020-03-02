@@ -110,7 +110,7 @@ require "connect.php";
     </div>
 </div>
 
-
+<h1>Hello</h1>
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/myScripts.js"></script>
