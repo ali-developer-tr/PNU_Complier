@@ -1,5 +1,5 @@
-tblUsers
-
+--------tblSystemSettings---------
+MaxUserNameChangeCount
 --------tblUsers---------
 Id
 Name
@@ -7,13 +7,20 @@ UserName
 Password
 Email
 Verified
+VerficationCode
 Photo
 Birthday
 LastLoginTime
 RegisterTime
 Bio
 Score
+Theme
 Languages
+NameChangeCount
+Privacy (bit 0: LastLoginVisibleEveryOne :: bit 1: LastLoginVisibleFriends:: 
+		 bit 3: BirthdayVisibleEveryOne  :: bit 4: BirthdayVisibleFriends:: 
+		 bit 5: PhotoVisibleEveryOne     :: bit 6: PhotoVisibleFriends:: 
+		 bit 7: EmailVisibleEveryOne     :: bit 8: EmailVisibleFriends)
 --------tblFriends---------
 Id
 UserId
@@ -67,5 +74,20 @@ ExecutionTime
 MemoryUsage
 ProgrammingLanguage
 ResultText
+--------tblMessages---------
+Id
+FromUserId
+ToUserId
+MessageTitle
+MessageBody
+SendTime
+IsRead
+Trashed (bool)
+--------tblMsgTrash---------
+Id
+MessageID
+
+
+
 
 
