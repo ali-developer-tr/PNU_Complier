@@ -51,10 +51,10 @@ require "connect.php";
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-rig " >
                 <?php if (!isset($_SESSION['username'])) { ?>
-                    <li><a class="mr-3">Sign Up<i class="fa fa-user ml-2"></i></a></li>
-                    <li><a>Login<i class="fa fa-sign-in-alt ml-2"></i></a></li>
+                    <li><a class="mr-3"  data-toggle="modal" data-target="#RegisterModal"><i class="fa fa-user ml-2">Sign Up</i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Login<i class="fa fa-sign-in-alt ml-2"></i></a></li>
                 <?php } else { ?>
                     <li class="d-inline-block">
                         <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>
@@ -64,6 +64,7 @@ require "connect.php";
         </div>
     </div>
 </nav>
+<hr>
 <div class="container">
     <div class="row">
         <div class="col-12 col-lg-12 col-xl-12 col-sm-12 col-md-12 mt-3">
@@ -100,12 +101,11 @@ require "connect.php";
         </div>
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login"
-         aria-hidden="true">
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="Login">Login From</h5>
+                    <h5 class="modal-title" id="Login" >Login From</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>

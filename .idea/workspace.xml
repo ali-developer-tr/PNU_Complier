@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b31fd5fd-057d-4f85-8fcb-a4ec5f54241e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/acm1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/acm2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/image1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/image2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/s3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loginHtml.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +91,10 @@
       <workItem from="1583096368067" duration="8592000" />
       <workItem from="1583139513075" duration="2252000" />
       <workItem from="1583144811017" duration="906000" />
-      <workItem from="1583172382327" duration="1200000" />
+      <workItem from="1583172382327" duration="1534000" />
+      <workItem from="1583178021912" duration="900000" />
+      <workItem from="1583183787018" duration="1565000" />
+      <workItem from="1583185572587" duration="2528000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1583139572933</created>
@@ -140,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1583172217801</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="header,css,all codes">
+      <created>1583173671649</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583173671649</updated>
+    </task>
+    <task id="LOCAL-00008" summary="header,css,all codes,aslah shodeh ):">
+      <created>1583173809811</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583173809811</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,17 +164,19 @@
     <MESSAGE value="Test&#10;bodi" />
     <MESSAGE value="Test&#10;bodisssssss" />
     <MESSAGE value="slam aki slasckalck;'lksvklj\svklj\sdvjk'vjsdjvl;" />
-    <option name="LAST_COMMIT_MESSAGE" value="slam aki slasckalck;'lksvklj\svklj\sdvjk'vjsdjvl;" />
+    <MESSAGE value="header,css,all codes" />
+    <MESSAGE value="header,css,all codes,aslah shodeh ):" />
+    <option name="LAST_COMMIT_MESSAGE" value="header,css,all codes,aslah shodeh ):" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1583145338574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1583145338574" />
-    <state x="402" y="0" key="#PHP" timestamp="1583140914970">
+    <state x="402" y="0" key="#PHP" timestamp="1583185331524">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="402" y="0" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1583140914970" />
+    <state x="402" y="0" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1583185331524" />
     <state x="361" y="70" key="#SQL_Dialects" timestamp="1583101736337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,19 +186,23 @@
     </state>
     <state x="321" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583140445596" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583103310611" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583173670484">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583173808808">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583173670484" />
-    <state x="537" y="292" key="NewPhpFileDialog" timestamp="1583172090430">
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583173808808" />
+    <state x="537" y="292" key="NewPhpFileDialog" timestamp="1583178145546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="537" y="292" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583172090430" />
+    <state x="537" y="292" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583178145546" />
     <state x="604" y="331" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1583098506591" />
-    <state x="374" y="161" key="Vcs.Push.Dialog.v2" timestamp="1583173786846">
+    <state x="374" y="161" key="Vcs.Push.Dialog.v2" timestamp="1583173813183">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="374" y="161" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583173786846" />
+    <state x="374" y="161" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583173813183" />
+    <state x="360" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583183794057">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="360" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1583183794057" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1583172124360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
