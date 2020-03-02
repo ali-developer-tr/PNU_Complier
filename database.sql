@@ -1,0 +1,23 @@
+CREATE TABLE `pnu_contest`.`tblusers` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(32) NOT NULL,
+  `username` VARCHAR(32) NOT NULL,
+  `password` VARCHAR(33) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `verified` BLOB NULL DEFAULT false,
+  `verificationcode` INT NOT NULL,
+  `photo` TEXT NULL,
+  `birthday` DATE NULL,
+  `lastlogintime` DATETIME NULL,
+  `registertime` DATETIME NOT NULL,
+  `bio` TEXT NULL,
+  `score` INT NULL DEFAULT 0,
+  `theme` INT NULL DEFAULT 0,
+  `languages` TEXT NULL,
+  `namechangecount` INT NULL DEFAULT 0,
+  `privacy` INT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  UNIQUE INDEX `username_UNIQUE` (`username` ASC),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC));
+  
