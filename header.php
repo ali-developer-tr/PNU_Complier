@@ -3,7 +3,7 @@ session_start();
 require "connect.php";
 ?>
 <!doctype html>
-<html lang="fa-IR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Programming">
@@ -17,23 +17,88 @@ require "connect.php";
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/img/pnuLogo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <?php if (!isset($_SESSION['username'])) { ?>
+                    <li><a class="mr-3">Sign Up<i class="fa fa-user ml-2"></i></a></li>
+                    <li><a>Login<i class="fa fa-sign-in-alt ml-2"></i></a></li>
+                <?php } else { ?>
+                    <li class="d-inline-block">
+                        <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>
+                    </li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+</nav>
 <div class="container">
-    <ul class="regLog mt-4 text-right w-100">
-        <?php if (!isset($_SESSION['username'])) { ?>
-            <li class="d-inline-block mr-2" data-toggle="modal" data-target="#loginModal">
-                <a href="#" class="btn btn-outline-primary">Login</a>
-            </li>
-            <li class="d-inline-block" data-toggle="modal" data-target="#RegisterModal">
-                <a href="#" class="btn btn-outline-primary">Register</a>
-            </li>
-        <?php } else { ?>
-            <li class="d-inline-block">
-                <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>
-            </li>
-        <?php } ?>
-    </ul>
+    <div class="row">
+        <div class="col-12 col-lg-12 col-xl-12 col-sm-12 col-md-12 mt-3">
+            <div id="demo" class="carousel slide"
+                 data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
 
+                <!-- The slideshow -->
+                <div class="carousel-inner first-slide">
+                    <div class="carousel-item active">
+                        <img src="assets/img/image2.jpg" alt="Los Angeles" class="w-100 ">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/image1.jpg" alt="Chicago" class="w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/s3.png" alt="New York" class="w-100">
+                    </div>
+                </div>
 
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="Login"
          aria-hidden="true">
