@@ -85,7 +85,7 @@ require "connect.php";
                         <img src="assets/img/image1.jpg" alt="Chicago" class="w-100">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/img/s3.png" alt="New York" class="w-100">
+                        <img src="assets/img/picture1.jpg" alt="New York" class="w-100">
                     </div>
                 </div>
 
