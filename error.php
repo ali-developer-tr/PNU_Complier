@@ -1,5 +1,12 @@
 <?php
+//session_start();
+include "header.php";
+?>
 
-session_start();
+<div class="alert alert-danger">
+  <?php echo $_SESSION['ErrorMsg']; ?>
+</div>
 
-echo $_SESSION['ErrorMsg'];
+
+<?php
+include "footer.php";
