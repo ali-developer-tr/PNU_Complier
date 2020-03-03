@@ -162,7 +162,7 @@ img {
 
 .dashNavList {
     position: absolute;
-    right: 8%;
+    right: 17%;
 }
 
 .dashNavList span {
@@ -203,4 +203,71 @@ img {
 .dashNavList a:hover:after {
     width: 100%;
     left: 0;
+}
+
+/******************************** index Style **************************/
+img {
+    vertical-align: 0 !important;
+}
+
+#my-div {
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 900px) {
+    #my-img {
+        margin-left: 38px !important;
+        margin-top: 5px !important;
+    }
+
+    #my-img1 {
+        margin-left: 42px !important;
+        margin-top: 5px !important;
+    }
+
+    #my-img2 {
+        margin-left: 42px !important;
+        margin-top: 5px !important;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .box3 {
+        margin-left: 35px !important;
+    }
+
+    .box2 {
+        margin-left: 20px !important;
+    }
+}
+
+
+.my-text {
+    display: inline-block !important;
+    margin-top: 2px;
+}
+
+.my-imag {
+    display: inline-block !important;
+    padding: 5px 4px 8px 5px !important;
+}
+
+.box3 {
+    border: 1px solid #303F9F;
+    border-radius: 5px;
+    display: inline-block !important;
+}
+
+.box2 {
+    border: 1px solid #303F9F;
+    border-radius: 5px;
+    display: inline-block !important;
+}
+
+.box1 {
+    border: 1px solid #303F9F;
+    border-radius: 5px;
+    display: inline-block !important;
 }
