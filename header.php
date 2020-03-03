@@ -61,7 +61,7 @@ require "connect.php";
                                href="#"><i class="fa fa-user-circle"></i> <?php echo $_SESSION['username']; ?></a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="dashboard.php"><i class="fa fa-user-cog"></i> Dashboard</a>
+                                <a class="dropdown-item" href="panel/dashboard.php"><i class="fa fa-user-cog"></i> Dashboard</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
