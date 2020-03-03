@@ -70,25 +70,6 @@ img {
     border: none;
 }
 
-/*.my-nav a {
-    color: #212121;
-    border: 1px solid #BDBDBD;
-    margin: 3px;
-    border-radius: 7px;
-    background-color: #FFFFFF;
-}
-
-.my-nav li a:hover {
-    background-color: #e7e7e7;
-    transform: scale(1.1);
-    transition-duration: 0.8s;
-    border: 1px dashed #3F51B5 !important;
-}
-
-#home {
-    background-color: #00BCD4;
-}*/
-
 /********************************* NavBar Style ***************************/
 
 .my-nav-list ul li a {
@@ -152,6 +133,26 @@ img {
     left: 0;
 }
 
+@media screen and (max-width: 900px) {
+    .navbar-buttons {
+        margin: 20px 0 !important;
+    }
+
+    .navbar-buttons .navbar-btn {
+        padding: 8px !important;
+    }
+
+    .dashNavList {
+        position: inherit !important;
+        right: 0 !important;
+    }
+
+    .dashNavList a {
+        margin-right: 10px !important;
+    }
+
+}
+
 /******************************** Dashboard Style **************************/
 
 .dashNav {
@@ -161,7 +162,7 @@ img {
 
 .dashNavList {
     position: absolute;
-    right: 21%;
+    right: 17%;
 }
 
 .dashNavList span {

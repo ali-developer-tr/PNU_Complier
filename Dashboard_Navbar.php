@@ -5,7 +5,8 @@
     </button>
     <div class="collapse navbar-collapse dashNavList" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
+
+            <li class="nav-item">
                 <a class="nav-link active" href="edit_profile.php"><i class="fa fa-edit"></i> Edit Profile</a>
             </li>
             <li class="nav-item">
@@ -14,6 +15,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="submissions.php"><i class="fa fa-paper-plane"></i> Submissions</a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="contests.php"><i class="fa fa-chart-area"></i> Contests</a>
             </li>
