@@ -69,10 +69,6 @@ img {
 }
 
 
-.nav li a {
-    color: black;
-}
-
 .nav li a:hover {
     color: #c8ccc5;
 }
@@ -82,11 +78,17 @@ img {
     height: 45px;
 }
 
+<<<<<<< HEAD
 .btnSubmit{
     padding: 8px 10px;
     border-radius: 4px;
     color: white;
     border: none;
+=======
+.carousel {
+    border: 1px solid;
+    border-radius: 5px;
+>>>>>>> origin/master
 }
 .btnSubmit{
 
