@@ -52,7 +52,7 @@ require "connect.php";
                     </div>
                 </li>
                 <li class="nav-item mr-3">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">Disabled</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-rig ">
