@@ -52,7 +52,7 @@ button:focus, input:focus, a:focus {
 }
 
 .passText {
-    color: red;
+    color: #f20000;
 }
 
 .first-slide {
@@ -78,18 +78,9 @@ img {
     height: 45px;
 }
 
-<<<<<<< HEAD
-.btnSubmit{
+.btnSubmit {
     padding: 8px 10px;
     border-radius: 4px;
     color: white;
     border: none;
-=======
-.carousel {
-    border: 1px solid;
-    border-radius: 5px;
->>>>>>> origin/master
-}
-.btnSubmit{
-
 }
