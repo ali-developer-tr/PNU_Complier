@@ -14,6 +14,7 @@ require "connect.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PNU online compiler!</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/palette.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
@@ -52,10 +53,12 @@ require "connect.php";
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-rig " >
+            <ul class="nav navbar-nav navbar-rig ">
                 <?php if (!isset($_SESSION['username'])) { ?>
-                    <li><a class="mr-3"  data-toggle="modal" data-target="#RegisterModal">Register <i class="fa fa-user ml-2"></i></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Login <i class="fa fa-sign-in-alt ml-2"></i></a></li>
+                    <li><a class="mr-3" data-toggle="modal" data-target="#RegisterModal">Register <i
+                                    class="fa fa-user ml-2"></i></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Login <i
+                                    class="fa fa-sign-in-alt ml-2"></i></a></li>
                 <?php } else { ?>
                     <li class="d-inline-block">
                         <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>
@@ -68,11 +71,12 @@ require "connect.php";
 <hr>
 <div class="container">
     <!-- Modal -->
-    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="Login" >Login From</h5>
+                    <h5 class="modal-title" id="Login">Login From</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -148,7 +152,6 @@ require "connect.php";
                         <input minlength="8" required name="RegisterPassConf" id="RegPassConf" type="password"
                                class="RegPassConf form-control">
                         <span class="passText"></span>
-
                 </div>
                 <div class="modal-footer">
                     <button name="registerButton" class="btn btn-outline-primary" type="submit">Register</button>
