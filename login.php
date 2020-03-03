@@ -10,7 +10,7 @@ $pass = $_POST['LoginPass'];
 $status = "";
 
 try {
-    $query = "SELECT username, password FROM users WHERE username='" . $username . "' AND password='" . $pass . "'";
+    $query = "SELECT username, password FROM tblusers WHERE username='" . $username . "' AND password='" . $pass . "'";
     $result = $conn->prepare($query);
     $result->execute();
 
