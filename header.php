@@ -14,9 +14,9 @@ require "connect.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PNU online compiler!</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/palette.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/palette.css">
 </head>
 <body>
 
