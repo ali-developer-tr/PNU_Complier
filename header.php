@@ -15,6 +15,7 @@ require "connect.php";
     <title>PNU online compiler!</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
 
