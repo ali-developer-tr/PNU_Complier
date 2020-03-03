@@ -239,7 +239,7 @@ img {
     }
 
     .box2 {
-        margin-left: 20px !important;
+        margin-left: 35px !important;
     }
 }
 
@@ -270,4 +270,9 @@ img {
     border: 1px solid #303F9F;
     border-radius: 5px;
     display: inline-block !important;
+}
+
+.my-news {
+    border: 1px solid #303F9F;
+    border-radius: 5px;
 }
