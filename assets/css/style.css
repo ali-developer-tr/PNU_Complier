@@ -70,7 +70,7 @@ img {
     border: none;
 }
 
-.my-nav a {
+/*.my-nav a {
     color: #212121;
     border: 1px solid #BDBDBD;
     margin: 3px;
@@ -87,4 +87,119 @@ img {
 
 #home {
     background-color: #00BCD4;
+}*/
+
+/********************************* NavBar Style ***************************/
+
+.my-nav-list ul li a {
+    margin-right: 24px;
+}
+
+.my-nav {
+    background-color: #C5CAE9;
+}
+
+.navbar-buttons .dropdown-menu {
+    margin: 10px 0 0 0 !important;
+}
+
+.navbar-buttons .navbar-btn {
+    color: #303F9F;
+    transition-duration: 0.4s;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #303F9F;
+    background-color: transparent;
+    text-decoration: none !important;
+}
+
+.navbar-buttons a:hover {
+    color: white !important;
+    background: #303F9F;
+}
+
+.my-nav-list .navbar-nav ul {
+    display: table;
+    text-align: center;
+}
+
+.my-nav-list .navbar-nav li {
+    display: table-cell;
+    position: relative;
+}
+
+.my-nav-list .navbar-nav ul a {
+    color: #3F51B5;
+    display: inline-block;
+    position: relative;
+}
+
+.my-nav-list .navbar-nav ul a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #3F51B5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.my-nav-list .navbar-nav ul a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+/******************************** Dashboard Style **************************/
+
+.dashNav {
+    padding: 2px 0 !important;
+    position: relative;
+}
+
+.dashNavList {
+    position: absolute;
+    right: 21%;
+}
+
+.dashNavList span {
+    color: #3F51B5;
+    display: inline-block;
+}
+
+.dashNav ul {
+    display: table;
+    text-align: center;
+}
+
+.dashNavList li {
+    display: table-cell;
+    position: relative;
+}
+
+.dashNavList a {
+    color: #3F51B5;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+
+.dashNavList a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #3F51B5;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dashNavList a:hover:after {
+    width: 100%;
+    left: 0;
 }

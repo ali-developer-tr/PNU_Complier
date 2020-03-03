@@ -6,19 +6,19 @@
     <div class="collapse navbar-collapse dashNavList" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link active" href="edit_profile.php">Edit Profile</a>
+                <a class="nav-link active" href="edit_profile.php"><i class="fa fa-edit"></i> Edit Profile</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="groups.php">Groups</a>
+                <a class="nav-link" href="groups.php"><i class="fa fa-users"></i> Groups</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="submissions.php">Submissions</a>
+                <a class="nav-link" href="submissions.php"><i class="fa fa-paper-plane"></i> Submissions</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contests.php">Contests</a>
+                <a class="nav-link" href="contests.php"><i class="fa fa-chart-area"></i> Contests</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="friend.php">Friends</a>
+                <a class="nav-link" href="friend.php"><i class="fa fa-user-friends"></i> Friends</a>
             </li>
         </ul>
     </div>

@@ -21,50 +21,60 @@ require "connect.php";
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light my-nav shadow mb-5">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="assets/img/pnuLogo.png" alt="logo"></a>
+        <a class="navbar-brand" href="index.php"><img src="assets/img/pnuLogo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse my-nav navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mr-auto">
-                <li class="nav-item active mr-3">
-                    <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
+        <div class="collapse my-nav-list navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php" id="home"><i class="fa fa-home"></i> Home <span
+                                class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Link</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-chart-bar"></i> Contests</a>
                 </li>
-                <li class="nav-item dropdown mr-3">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-info-circle"></i> About us</a>
                 </li>
-                <li class="nav-item mr-3">
-                    <a class="nav-link" href="#">Disabled</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-envelope-open-text"></i> Contact us</a>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-rig ">
+            <ul class="nav navbar-nav navbar-buttons">
                 <?php if (!isset($_SESSION['username'])) { ?>
-                    <li><a class="mr-3 btn " data-toggle="modal" data-target="#RegisterModal">Register
-                            <i class="fa fa-sign-in-alt"></i></a></li>
-                    <li><a class="btn " href="#" data-toggle="modal" data-target="#LoginModal">Login <i
-                                    class="fa fa-sign-in-alt "></i></a></li>
+                    <li><a class="navbar-btn mr-2" data-toggle="modal" data-target="#RegisterModal"><i
+                                    class="fa fa-user-check"></i> Register
+                        </a></li>
+                    <li><a class="navbar-btn" href="#" data-toggle="modal" data-target="#LoginModal"><i
+                                    class="fa fa-sign-in-alt "></i> Login</a></li>
 
                 <?php } else { ?>
                     <li class="d-inline-block">
-                        <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>
+                        <div class="dropdown show">
+                            <a class="navbar-btn" href="#" role="button" id="dropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                               href="#"><i class="fa fa-user-circle"></i> <?php echo $_SESSION['username']; ?></a>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="dashboard.php"><i class="fa fa-user-cog"></i> Dashboard</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+
+                        </div>
                     </li>
                 <?php } ?>
+
             </ul>
         </div>
     </div>
 </nav>
-<hr>
+
 <div class="container">
     <!-- Modal -->
     <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
