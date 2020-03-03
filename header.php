@@ -30,7 +30,7 @@ require "connect.php";
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav my-nav mr-auto">
                 <li class="nav-item active mr-3">
                     <a class="nav-link" href="#" id="home">Home <span class="sr-only">(current)</span></a>
                 </li>
