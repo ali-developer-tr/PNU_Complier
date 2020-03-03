@@ -54,8 +54,8 @@ require "connect.php";
             </ul>
             <ul class="nav navbar-nav navbar-rig " >
                 <?php if (!isset($_SESSION['username'])) { ?>
-                    <li><a class="mr-3"  data-toggle="modal" data-target="#RegisterModal">Register <i class="fa fa-user ml-2"></i></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#LoginModal">Login <i class="fa fa-sign-in-alt ml-2"></i></a></li>
+                    <li><a class="mr-3 btn btn-outline-info"  data-toggle="modal" data-target="#RegisterModal">Register <i class="fa fa-sign-in-alt"></i></a></li>
+                    <li><a class="btn btn-outline-info" href="#" data-toggle="modal" data-target="#LoginModal">Login <i class="fa fa-sign-in-alt "></i></a></li>
                 <?php } else { ?>
                     <li class="d-inline-block">
                         <a href="#">Welcome <?php echo $_SESSION['username']; ?>!</a>

@@ -72,10 +72,6 @@ svg {
     color: gray;
 }
 
-.nav li a {
-    color: black;
-}
-
 .nav li a:hover {
     color: #c8ccc5;
 }
