@@ -72,19 +72,32 @@ img {
 
 .my-nav a {
     color: #212121;
-    border: 1px solid #BDBDBD;
     margin: 3px;
     border-radius: 7px;
-    background-color: #FFFFFF;
 }
 
-.my-nav li a:hover {
-    background-color: #e7e7e7;
+.my-nav li:hover {
     transform: scale(1.1);
-    transition-duration: 0.8s;
-    border: 1px dashed #3F51B5 !important;
+    transition-duration: 0.2s;
 }
 
 #home {
     background-color: #00BCD4;
+}
+
+.aslei {
+    border: 2px solid #303F9F;
+
+}
+
+.my-text {
+    display: inline-block;
+}
+
+.my-image {
+    display: inline-block;
+}
+
+.clearfix {
+    clear: both;
 }
