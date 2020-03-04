@@ -2,28 +2,33 @@
 
 session_start();
 
-require "connect.php";
+if ((isset($_POST["LoginUsername"])) && isset($_POST["LoginPass"])) {
+    require "connect.php";
+    //$username = $_POST['LoginUsername'];
+    //$pass = $_POST['LoginPass'];
+    $username = filter_input(INPUT_POST, 'LoginUsername', FILTER_SANITIZE_STRING);
+    $pass = filter_input(INPUT_POST, 'LoginPass', FILTER_SANITIZE_STRING);
 
-$username = $_POST['LoginUsername'];
-$pass = $_POST['LoginPass'];
+    try {
 
-$status = "";
+        $sql = "SELECT username, password FROM tblusers WHERE username=:username AND password=:pass";
+        $retval = $conn->prepare($sql);
+        $retval->bindparam(':username', $username);
+        $retval->bindparam(':pass', $pass);
+        $retval->execute();
+        $row = $retval->fetch(PDO::FETCH_ASSOC);
+        if ($row == 0) {
+            echo "invalid username";
+        } else {
+            $_SESSION["username"] = $row["username"];
+            echo "success";
+        }
 
-try {
-    $query = "SELECT username, password FROM tblusers WHERE username='" . $username . "' AND password='" . $pass . "'";
-    $result = $conn->prepare($query);
-    $result->execute();
 
-    if ($result) {
-
-        $_SESSION['username'] = $username;
-
+    } catch (PDOException $e) {
+        echo $e;
     }
-
-    header("location:index.php");
-
-
-} catch (PDOException $e) {
-    echo $e;
+    exit();
 }
 
+?>
