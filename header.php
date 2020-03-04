@@ -18,6 +18,7 @@ require "connect.php";
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/palette.css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 
@@ -61,9 +62,10 @@ require "connect.php";
                                href="#"><i class="fa fa-user-circle"></i> <?php echo $_SESSION['username']; ?></a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="dashboard.php?item=0"><i class="fa fa-user-cog"></i> Dashboard</a>
+                                <a class="dropdown-item" href="dashboard.php?item=0"><i class="fa fa-user-cog"></i>
+                                    Dashboard</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="logout.php">Logout</a>
                             </div>
 
                         </div>
@@ -87,13 +89,42 @@ require "connect.php";
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="login.php" method="post" class="form-group">
-                        <label for="name" class="form-check-label">Username: </label>
-                        <input required minlength="4" name="LoginUsername" id="name" type="text"
+
+                    <script type="text/javascript">
+
+                        function loginFunction() {
+                            alert('Submitted!');
+                            var LoginUsername = $(".LoginUsername").val();
+                            var LoginPass = $(".LoginPass").val();
+                            $.ajax
+                            ({
+                                type: 'post',
+                                url: 'login.php',
+                                data: {
+                                    username: LoginUsername,
+                                    password: LoginPass
+                                },
+                                success: function (response) {
+                                    if (response === "success") {
+                                        window.location.href = "index.php";
+                                    } else {
+                                        alert("Wrong Details");
+                                    }
+                                }
+                            };
+                            alert('Submitted!');
+                            return false;
+                        }
+
+                    </script>
+
+                    <form onsubmit="return loginFunction();" action="login.php" method="post" class="form-group">
+                        <label for="LoginName" class="form-check-label">Username: </label>
+                        <input required minlength="4" name="LoginUsername" id="LoginName" type="text"
                                class="name form-control">
 
-                        <label for="name" class="form-check-label mt-2">Password: </label>
-                        <input required minlength="8" name="LoginPass" id="name" type="password"
+                        <label for="LoginPass" class="form-check-label mt-2">Password: </label>
+                        <input required minlength="8" name="LoginPass" id="LoginPass" type="password"
                                class="name form-control">
                 </div>
                 <div class="modal-footer">
