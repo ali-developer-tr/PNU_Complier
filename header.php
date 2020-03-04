@@ -47,7 +47,7 @@ require "connect.php";
             </ul>
             <ul class="nav navbar-nav navbar-buttons">
                 <?php if (!isset($_SESSION['username'])) { ?>
-                    <li><a class="navbar-btn mr-2" data-toggle="modal" data-target="#RegisterModal"><i
+                    <li id="reg"><a class="navbar-btn mr-2" data-toggle="modal" data-target="#RegisterModal"><i
                                     class="fa fa-user-check"></i> Register
                         </a></li>
                     <li><a class="navbar-btn" href="#" data-toggle="modal" data-target="#LoginModal"><i

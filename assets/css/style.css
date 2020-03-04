@@ -230,9 +230,13 @@ img {
         margin-left: 42px !important;
         margin-top: 5px !important;
     }
+
+    #reg {
+        margin-bottom: 20px !important;
+    }
 }
 
-@media screen and (min-width: 900px) {
+/*@media screen and (min-width: 900px) {
 
     .box3 {
         margin-left: 35px !important;
@@ -241,7 +245,7 @@ img {
     .box2 {
         margin-left: 35px !important;
     }
-}
+}*/
 
 
 .my-text {
@@ -255,24 +259,20 @@ img {
 }
 
 .box3 {
-    border: 1px solid #303F9F;
     border-radius: 5px;
     display: inline-block !important;
 }
 
 .box2 {
-    border: 1px solid #303F9F;
     border-radius: 5px;
     display: inline-block !important;
 }
 
 .box1 {
-    border: 1px solid #303F9F;
     border-radius: 5px;
     display: inline-block !important;
 }
 
 .my-news {
-    border: 1px solid #303F9F;
     border-radius: 5px;
 }
