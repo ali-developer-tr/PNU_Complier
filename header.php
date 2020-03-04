@@ -93,34 +93,36 @@ require "connect.php";
                     <script type="text/javascript">
 
                         function loginFunction() {
-                            alert('Submitted!');
-                            var LoginUsername = $(".LoginUsername").val();
-                            var LoginPass = $(".LoginPass").val();
+                            var LoginUsername = document.getElementById('LoginUserame').value;
+                            var LoginPass = document.getElementById('LoginPass').value;
+                            //alert(LoginUsername + " and "+LoginPass);
                             $.ajax
                             ({
                                 type: 'post',
                                 url: 'login.php',
                                 data: {
-                                    username: LoginUsername,
-                                    password: LoginPass
+                                  LoginUsername: LoginUsername,
+                                  LoginPass: LoginPass
                                 },
                                 success: function (response) {
-                                    if (response === "success") {
+                                    if (response == "success") {
+                                        alert('Login Successfull!');
+
                                         window.location.href = "index.php";
                                     } else {
-                                        alert("Wrong Details");
+                                        alert("Invalid username and/or password. Please try again!");
                                     }
                                 }
-                            };
-                            alert('Submitted!');
+                            });
+                            
                             return false;
                         }
 
                     </script>
 
                     <form onsubmit="return loginFunction();" action="login.php" method="post" class="form-group">
-                        <label for="LoginName" class="form-check-label">Username: </label>
-                        <input required minlength="4" name="LoginUsername" id="LoginName" type="text"
+                        <label for="LoginUserame" class="form-check-label">Username: </label>
+                        <input required minlength="4" name="LoginUsername" id="LoginUserame" type="text"
                                class="name form-control">
 
                         <label for="LoginPass" class="form-check-label mt-2">Password: </label>
