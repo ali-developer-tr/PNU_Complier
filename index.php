@@ -9,7 +9,7 @@ include "header.php";
                     <img src="assets/img/pnu.png" alt="pnu" id="my-img">
                 </div>
                 <div class="my-text align-top col-12 col-xl-7 col-lg-6 col-sm-12 col-md-12 text-justify mt-2 mb-2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut
                     laoreet Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
@@ -17,6 +17,7 @@ include "header.php";
                     laoreet v Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut
                     laoreet
+                  </p>
                 </div>
             </div>
         </div>
@@ -27,9 +28,11 @@ include "header.php";
                         <img src="assets/img/image2.png" alt="pnu" id="my-img1" width="170px" height="250px">
                     </div>
                     <div class="my-text align-top col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12 text-justify mt-2 mb-2">
+                        <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet
+                        </p>
                     </div>
                 </div>
                 <div class="box3 col-12 col-lg-6 col-sm-12 col-md-12 col-xl-6 mt-3 shadow  w-100">
@@ -37,9 +40,11 @@ include "header.php";
                         <img src="assets/img/image2.png" alt="pnu" id="my-img2" width="170px" height="250px">
                     </div>
                     <div class="my-text align-top col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12 text-justify mt-2 mb-2">
+                      <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                         tincidunt ut
                         laoreet
+                      </p>
                     </div>
                 </div>
             </div>
@@ -52,9 +57,11 @@ include "header.php";
                     <img src="assets/img/55.jpg" alt="not-found">
                 </div>
                 <div class="my-text align-top col-12 col-xl-6 col-lg-6 col-sm-12 col-md-12 text-justify mt-2 mb-2">
+                   <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                     tincidunt ut
                     laoreet
+                   </p>
                 </div>
             </div>
         </div>

@@ -25,13 +25,13 @@ require "connect.php";
 <nav class="navbar navbar-expand-lg navbar-light my-nav shadow mb-5">
     <div class="container">
         <a class="navbar-brand" href="index.php"><img src="assets/img/pnuLogo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" id="my-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse my-nav-list navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav my-nav-al mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.php" id="home"><i class="fa fa-home"></i> Home <span
                                 class="sr-only">(current)</span></a>

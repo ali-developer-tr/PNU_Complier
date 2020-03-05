@@ -3,14 +3,16 @@
 <div class="my-footer w-100 mt-3">
     <div>
         <!--Contact Section-->
-        <div class="container-fluid bg-grey">
+        <div class="container bg-grey">
             <h2 class="text-center p-3">CONTACT</h2>
             <div class="row">
                 <div class="col-sm-5">
-                    <p>Contact us and we'll get back to you within 24 hours.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-                    <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-                    <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+                    <ul class="footer-li">
+                        <li class="mt-4 text-justify"><span><i class="fa fa-info-circle"></i> We will announce your response within the next 24 hours</span></li>
+                        <li class="mt-4"><span><i class="fa fa-address-card"></i> East Azarbaijan-Tabriz</span></li>
+                        <li class="mt-4"><a href="tel:3344558822"><i class="fa fa-phone"></i> 3344558822</a></li>
+                        <li class="mt-4"><a href="mailto:alirezakn@outlook.com"><i class="fa fa-envelope"></i> alirezakn@outlook.com</a></li>
+                    </ul>
                 </div>
                 <div class="col-sm-7">
                     <div class="row">
@@ -27,7 +29,7 @@
                                                             placeholder="Comment" rows="5"></textarea><br>
                     <div class="row">
                         <div class="col-sm-12 form-group">
-                            <button class="btn btn-outline-primary pull-right" type="submit">Send</button>
+                            <button class="btn btn-default pull-right text-white" type="submit">Send</button>
                         </div>
                     </div>
                 </div>
