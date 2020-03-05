@@ -208,6 +208,18 @@ img {
     left: 0;
 }
 
+.dash-main svg {
+    vertical-align: -0.1em;
+}
+
+.dash-main li {
+    margin-top: 8px;
+}
+
+.dash-main span, .dash-main h3 {
+    color: #002857;
+}
+
 .dash-left-col {
     border-radius: 16px;
 }
