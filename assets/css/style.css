@@ -31,6 +31,10 @@ a:hover {
     text-decoration: none;
 }
 
+p {
+    color: #002857;
+}
+
 button:focus, input:focus, a:focus {
     outline: none;
 }
@@ -43,8 +47,28 @@ button:focus, input:focus, a:focus {
     color: #f20000;
 }
 
+.my-nav-al a {
+    color: #FFFFFF !important;
+    font-size: 16px;
+}
+
+.my-nav-al a:hover {
+    background: #00BCD4;
+    border-radius: 9px;
+    transition-duration: 0.4s;
+}
+
+.navbar-buttons a {
+    color: #FFFFFF !important;
+    font-size: 16px !important;
+}
+
 .first-slide {
     height: 500px;
+}
+
+#my-btn {
+    background-color: #FFFFFF !important;
 }
 
 .first-slide img {
@@ -88,18 +112,18 @@ img {
 }
 
 .navbar-buttons .navbar-btn {
-    color: #303F9F;
+    color: #FFFFFF;
     transition-duration: 0.4s;
     padding: 8px 16px;
     border-radius: 4px;
-    border: 1px solid #303F9F;
+    border: 1px solid #FFFFFF;
     background-color: transparent;
     text-decoration: none !important;
 }
 
 .navbar-buttons a:hover {
     color: white !important;
-    background: #303F9F;
+    background: #00BCD4;
 }
 
 .my-nav-list .navbar-nav ul {
@@ -113,20 +137,20 @@ img {
 }
 
 .my-nav-list .navbar-nav ul a {
-    color: #3F51B5;
+    color: #FFFFFF;
     display: inline-block;
     position: relative;
 }
 
 .my-nav-list .navbar-nav ul a:after {
-    background: none repeat scroll 0 0 transparent;
+    /*background: none repeat scroll 0 0 transparent !important;*/
     bottom: 0;
     content: "";
     display: block;
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #3F51B5;
+    background: #FFFFFF !important;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -154,6 +178,13 @@ img {
         margin-right: 10px !important;
     }
 
+    .my-nav-al li a {
+        padding-left: 10px !important;
+    }
+
+    .navbar-buttons  {
+        margin-left: 10px !important;
+    }
 }
 
 /******************************** Dashboard Style **************************/
@@ -290,9 +321,12 @@ img {
     border-radius: 8px 8px 0 0;
     background-image: url("../img/footer-img.jpg");
     color: #FFFFFF;
-    height: 100%;
 }
 
 .container-fluid h2 {
     margin-top: 9px !important;
+}
+
+.footer-li a {
+    color: #FFFFFF !important;
 }
