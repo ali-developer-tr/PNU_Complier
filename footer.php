@@ -41,5 +41,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/myScripts.js"></script>
 <script src="assets/js/all.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

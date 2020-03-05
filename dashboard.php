@@ -7,32 +7,9 @@ if (($item > 5) || ($item < 0)) {
     exit();
 }
 include "header.php";
-include "connect.php";
 include "Dashboard_Navbar.php";
-
-$details = array();
-$username = $_SESSION['username'];
-$q = "SELECT * FROM tblusers WHERE username=:username";
-$result = $conn->prepare($q);
-$result->bindParam(':username', $username);
-$result->execute();
-
-$row = $result->fetch(PDO::FETCH_ASSOC);
-
-$details = array(
-    "firstname" => $row['firstname'],
-    "lastname" => $row['lastname'],
-    "username" => $row['username'],
-    "email" => $row['email'],
-    "photo" => $row['photo'],
-    "birthday" => $row['birthday'],
-    "bio" => $row['bio'],
-    "registertime" => $row['registertime'],
-    "score" => $row['score'],
-    "languages" => $row['languages'],
-    "namechangecount" => $row['namechangecount'],
-    "privacy" => $row['privacy']
-);
+include "userDetails.php";
+$userInfo = userDerails();
 
 
 switch ($item) {
@@ -61,10 +38,10 @@ if ($item == 0) {
             <div class="col-6">
                 <div class="dash-left shadow p-4">
                     <h3>
-                        <?php if ($details['photo']) {
+                        <?php if ($userInfo['photo']) {
                             ?>
-                            <img src="<?php echo "userimages/" . $details['photo']; ?>"
-                                 alt="<?php $details['username']; ?> photo">
+                            <img src="<?php echo "userimages/" . $userInfo['photo']; ?>"
+                                 alt="<?php $userInfo['username']; ?> photo">
                             <?php
                         } else {
                             ?>
@@ -76,37 +53,37 @@ if ($item == 0) {
                     <ul>
                         <li>
                             <span><i class="fa fa-user-circle"></i> Full Name: </span>
-                            <span><?php echo $details['firstname'] ?><?php echo $details['lastname'] ?></span>
+                            <span><?php echo $userInfo['firstname'] ?><?php echo $userInfo['lastname'] ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-user"></i> Username: </span>
-                            <span><?php echo $details['username']; ?></span>
+                            <span><?php echo $userInfo['username']; ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-envelope"></i> Email: </span>
-                            <span><?php echo $details['email']; ?></span>
+                            <span><?php echo $userInfo['email']; ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-birthday-cake"></i> Birthday: </span>
-                            <span><?php echo $details['birthday']; ?></span>
+                            <span><?php echo $userInfo['birthday']; ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-calendar-check"></i> Register time: </span>
-                            <span><?php echo date('Y-m-d', strtotime(str_replace('-', '/', $details['registertime']))); ?></span>
+                            <span><?php echo date('Y-m-d', strtotime(str_replace('-', '/', $userInfo['registertime']))); ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-star"></i> Score: </span>
-                            <span><?php echo $details['score']; ?></span>
+                            <span><?php echo $userInfo['score']; ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-code"></i> Languages: </span>
-                            <span><?php echo $details["languages"]; ?></span>
+                            <span><?php echo $userInfo["languages"]; ?></span>
                         </li>
                         <li>
                             <span><i class="fa fa-user-lock"></i> Privacy: </span>
                             <div class="checkbox disabled pl-4">
                                 <?php
-                                $No = $details["privacy"];
+                                $No = $userInfo["privacy"];
                                 // privacy options : int32
                                 // bit 0:
                                 ?>

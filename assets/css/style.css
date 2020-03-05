@@ -182,7 +182,7 @@ img {
         padding-left: 10px !important;
     }
 
-    .navbar-buttons  {
+    .navbar-buttons {
         margin-left: 10px !important;
     }
 }
@@ -247,8 +247,10 @@ img {
     margin-top: 8px;
 }
 
-.dash-main span, .dash-main h3 {
-    color: #002857;
+.dash-main span, .dash-main h3,
+.edit_profile_main h3, .edit_profile_main span,
+.edit_profile_main input, .edit_profile_main label {
+    color: #002857 !important;
 }
 
 .dash-left-col {

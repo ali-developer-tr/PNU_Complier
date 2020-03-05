@@ -1,6 +1,5 @@
 <?php
 session_start();
-require "connect.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -18,6 +17,8 @@ require "connect.php";
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
     <link rel="stylesheet" href="assets/css/palette.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
