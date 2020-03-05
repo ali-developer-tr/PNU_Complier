@@ -56,7 +56,7 @@ switch ($item) {
 
 if ($item == 0) {
     ?>
-    <div class="dash-main mt-5">
+    <div class="dash-main mt-5 mb-5">
         <div class="row">
             <div class="col-6">
                 <div class="dash-left shadow p-4">

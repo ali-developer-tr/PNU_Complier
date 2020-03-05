@@ -1,6 +1,6 @@
 </div>
 </div>
-<div class="my-footer w-100 mt-3">
+<div class="my-footer w-100 mt-3 pt-5 pb-5">
     <div>
         <!--Contact Section-->
         <div class="container bg-grey">
