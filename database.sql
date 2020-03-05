@@ -1,26 +1,29 @@
-CREATE TABLE `pnu_contest`.`tblusers` (
-  `id` INT NOT NULL,
-  `name` VARCHAR(32) NOT NULL,
-  `username` VARCHAR(32) NOT NULL,
-  `password` VARCHAR(33) NOT NULL,
-  `email` VARCHAR(255) NOT NULL,
-  `verified` BLOB NULL,
-  `verificationcode` INT NOT NULL,
-  `photo` TEXT NULL,
-  `birthday` DATE NULL,
-  `lastlogintime` DATETIME NULL,
-  `registertime` DATETIME NOT NULL,
-  `bio` TEXT NULL,
-  `score` INT NULL DEFAULT 0,
-  `theme` INT NULL DEFAULT 0,
-  `languages` TEXT NULL,
-  `namechangecount` INT NULL DEFAULT 0,
-  `privacy` INT NULL DEFAULT 0,
+CREATE TABLE `tblusers` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(32) COLLATE utf8_persian_ci DEFAULT NULL,
+  `lastname` varchar(45) COLLATE utf8_persian_ci DEFAULT NULL,
+  `username` varchar(32) COLLATE utf8_persian_ci NOT NULL,
+  `password` varchar(33) COLLATE utf8_persian_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8_persian_ci NOT NULL,
+  `verified` blob,
+  `verificationcode` int(11) NOT NULL,
+  `photo` text COLLATE utf8_persian_ci,
+  `birthday` date DEFAULT NULL,
+  `lastlogintime` datetime DEFAULT NULL,
+  `registertime` datetime NOT NULL,
+  `bio` text COLLATE utf8_persian_ci,
+  `score` int(11) DEFAULT '0',
+  `theme` int(11) DEFAULT '0',
+  `languages` text COLLATE utf8_persian_ci,
+  `namechangecount` int(11) DEFAULT '0',
+  `privacy` int(11) DEFAULT '0',
   PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
-  UNIQUE INDEX `username_UNIQUE` (`username` ASC),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC));
-  
+  UNIQUE KEY `id_UNIQUE` (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`),
+  UNIQUE KEY `email_UNIQUE` (`email`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+
   CREATE TABLE `pnu_contest`.`tblfriends` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `userid` INT NOT NULL,
