@@ -15,7 +15,7 @@ $code = rand(100000, 999999);
 $time = $date = date('Y-m-d H:i:s');
 
 try {
-    $query = "INSERT INTO tblusers(name, username, password, email, verificationcode, registertime) VALUE (:name,:username,:password,:email, :verificationcode, :registertime)";
+    $query = "INSERT INTO tblusers(firstname, username, password, email, verificationcode, registertime) VALUE (:name,:username,:password,:email, :verificationcode, :registertime)";
     $result = $conn->prepare($query);
     $result->bindParam(":name", $name);
     $result->bindParam(":username", $username);
