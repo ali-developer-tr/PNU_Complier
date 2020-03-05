@@ -56,11 +56,22 @@ switch ($item) {
 
 if ($item == 0) {
     ?>
-    <div class="dash-main">
+    <div class="dash-main mt-5">
         <div class="row">
             <div class="col-6">
                 <div class="dash-left shadow p-4">
-                    <h3><i class="fa fa-info"></i> Your details</h3>
+                    <h3>
+                        <?php if ($details['photo']) {
+                            ?>
+                            <img src="<?php echo "userimages/" . $details['photo']; ?>"
+                                 alt="<?php $details['username']; ?> photo">
+                            <?php
+                        } else {
+                            ?>
+                            <i class="fa fa-user-circle" style="font-size: 50px;vertical-align: middle"></i>
+                            <?php
+                        } ?>
+                        Your details</h3>
                     <hr>
                     <ul>
                         <li>
@@ -92,18 +103,19 @@ if ($item == 0) {
                             <span><?php echo $details["languages"]; ?></span>
                         </li>
                         <li>
-                            <span><i class="fa fa-user-lock"></i></span>
-                            <div class="checkbox disabled d-inline-block">
-                                <label><input type="checkbox" value="" disabled checked> Option 3</label>
-                                <label><input type="checkbox" value="" disabled checked> Option 3</label>
-                            </div>
-
+                            <span><i class="fa fa-user-lock"></i> Privacy: </span>
+                            <div class="checkbox disabled pl-4">
                                 <?php
-                                $No=$details["privacy"];
+                                $No = $details["privacy"];
                                 // privacy options : int32
                                 // bit 0:
-                                //if ()
                                 ?>
+                                <span>Last login visibility: <?php if ($No && 1) echo "Everyone"; elseif ($No && 2) echo "Friends"; else echo "Just me!"; ?></span><br>
+                                <span>Birthday visibility: <?php if ($No && 1) echo "Everyone"; elseif ($No && 2) echo "Friends"; else echo "Just me!"; ?></span><br>
+                                <span>Photo visibility: <?php if ($No && 1) echo "Everyone"; elseif ($No && 2) echo "Friends"; else echo "Just me!"; ?></span><br>
+                                <span>Email visibility: <?php if ($No && 1) echo "Everyone"; elseif ($No && 2) echo "Friends"; else echo "Just me!"; ?></span><br>
+
+                            </div>
 
                         </li>
                     </ul>
@@ -113,7 +125,7 @@ if ($item == 0) {
                 <div class="dash-right">
                     <ul>
                         <li>
-                            <span></span>
+
                         </li>
                     </ul>
                 </div>
