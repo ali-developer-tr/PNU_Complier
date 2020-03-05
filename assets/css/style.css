@@ -24,6 +24,7 @@ li {
 }
 
 a {
+    text-decoration: none !important;
     color: #303F9F !important;
 }
 
@@ -188,7 +189,7 @@ img {
 }
 
 /******************************** Dashboard Style **************************/
-.dropdown-menu  {
+.dropdown-menu {
     background-color: black !important;
 }
 
@@ -333,6 +334,20 @@ img {
     border-radius: 5px;
 }
 
+/*----------------------------------------------------footer------------------------------------------------------------*/
+.my-footr-nav ul li {
+    display: inline-block;
+}
+
+.my-footr-nav ul li a {
+    color: #FFFFFF !important;
+
+}
+
+.my-footr-nav ul li:hover {
+    transform: scale(1.1);
+}
+
 .my-footer {
     background-color: #303F9F;
     border-radius: 8px 8px 0 0;
@@ -346,4 +361,44 @@ img {
 
 .footer-li a {
     color: #FFFFFF !important;
+}
+
+#li-a1:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#li-a2:hover {
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+#btn-sub {
+    color: #FFFFFF;
+}
+
+#btn-sub:hover {
+    color: aqua;
+    transition-duration: 0.4s;
+}
+
+.icon li {
+    display: inline-block;
+    border-radius: 64px;
+    padding: 8px 12px;
+    background-color: #212121;;
+}
+
+.icon li svg {
+    color: #FFFFFF;
+}
+
+.icon li:hover .icon li svg {
+    color: #FFFFFF;
+}
+
+.icon li:hover {
+    background: linear-gradient(90deg, #303F9F 15%, #00BCD4 85%);
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 }
