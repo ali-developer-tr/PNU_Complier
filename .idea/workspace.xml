@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b31fd5fd-057d-4f85-8fcb-a4ec5f54241e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/tabriz2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/tabriz3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +96,8 @@
       <workItem from="1583185572587" duration="2528000" />
       <workItem from="1583341520536" duration="330000" />
       <workItem from="1583398942051" duration="527000" />
-      <workItem from="1583421652019" duration="8491000" />
+      <workItem from="1583421652019" duration="9331000" />
+      <workItem from="1583440274640" duration="1594000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1583139572933</created>
@@ -194,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583424603133</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="header and footer fixed">
+      <created>1583430907288</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1583430907288</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +216,8 @@
     <MESSAGE value="index html coming soon" />
     <MESSAGE value="footer nages" />
     <MESSAGE value="footer-header" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer-header" />
+    <MESSAGE value="header and footer fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="header and footer fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1583145338574">
@@ -233,23 +237,23 @@
     </state>
     <state x="321" y="45" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1583140445596" />
     <state x="361" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583103310611" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583424601319">
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1583430906069">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583424601319" />
-    <state x="387" y="71" key="MultipleFileMergeDialog" timestamp="1583341724775">
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1583430906069" />
+    <state x="387" y="71" key="MultipleFileMergeDialog" timestamp="1583430931298">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="387" y="71" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1583341724775" />
+    <state x="387" y="71" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1583430931298" />
     <state x="537" y="292" key="NewPhpFileDialog" timestamp="1583178145546">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="537" y="292" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1583178145546" />
     <state x="604" y="331" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1583098506591" />
-    <state x="374" y="161" key="Vcs.Push.Dialog.v2" timestamp="1583424607361">
+    <state x="374" y="161" key="Vcs.Push.Dialog.v2" timestamp="1583430946177">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="374" y="161" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583424607361" />
+    <state x="374" y="161" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1583430946177" />
     <state x="360" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1583398993862">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

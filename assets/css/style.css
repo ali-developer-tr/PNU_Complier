@@ -188,6 +188,9 @@ img {
 }
 
 /******************************** Dashboard Style **************************/
+.dropdown-menu  {
+    background-color: black !important;
+}
 
 .dashNav {
     padding: 2px 0 !important;
