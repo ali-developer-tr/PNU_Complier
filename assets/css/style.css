@@ -35,6 +35,9 @@ button:focus, input:focus, a:focus {
     outline: none;
 }
 
+.navbar {
+    background-image: url("../img/header1.jpg");
+}
 
 .passText {
     color: #f20000;
@@ -275,4 +278,16 @@ img {
 
 .my-news {
     border-radius: 5px;
+}
+
+.my-footer {
+    background-color: #303F9F;
+    border-radius: 8px 8px 0 0;
+    background-image: url("../img/footer-img.jpg");
+    color: #FFFFFF;
+    height: 100%;
+}
+
+.container-fluid h2 {
+    margin-top: 9px !important;
 }
