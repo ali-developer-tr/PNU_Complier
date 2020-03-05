@@ -35,7 +35,7 @@ button:focus, input:focus, a:focus {
     outline: none;
 }
 
-.navbar {
+.my-nav {
     background-image: url("../img/header1.jpg");
 }
 
@@ -207,6 +207,11 @@ img {
     width: 100%;
     left: 0;
 }
+
+.dash-left-col {
+    border-radius: 16px;
+}
+
 
 /******************************** index Style **************************/
 img {
