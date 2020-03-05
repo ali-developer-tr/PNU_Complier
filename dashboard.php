@@ -17,15 +17,21 @@ switch ($item)
   case 3: include "submissions.php"; break;
   case 4: include "contests.php"; break;
   case 5: include "friend.php"; break;
-
 }
 
 if($item==0){
+
 ?>
 
 <h1>Dashboard!</h1>
-
-
+<hr>
+<div class="row">
+<div class="col-6">
+</div>
+<div class="col-6">
+</div>
+</div>
 <?php
 }
 include "footer.php";
+?>
