@@ -1,9 +1,7 @@
 <?php
 session_start();
 
-
 require "connect.php";
-
 
 $name = $_POST['RegisterName'];
 $username = $_POST['RegisterUsername'];

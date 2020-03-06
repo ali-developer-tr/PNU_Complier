@@ -1,5 +1,12 @@
 <?php
 session_start();
+// opening dashboard page is meaningless without login
+if ($_SERVER["SCRIPT_NAME"]=="/dashboard.php")
+  if (!isset($_SESSION["username"]))  
+    header("Location: index.php");
+echo "---------------------";
+echo $_SERVER['SCRIPT_NAME'];
+echo "---------------------";
 ?>
 <!doctype html>
 <html lang="en">
